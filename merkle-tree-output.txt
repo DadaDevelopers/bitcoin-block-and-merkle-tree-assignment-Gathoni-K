@@ -1,0 +1,28 @@
+=== Leaf transactions ===
+TxA: d5aa81e54bcbcc7ea312f3be3ad6a4046a1dcfe9643904180252a7f5818d26b1
+TxB: 9970a8292c62998c088e87f73a7a21da64191022688d92179a47d8911507912e
+TxC: d73ce1e0d503b2207cf4919e227448712242300fb028f841ec8225c855cafa61
+TxD: ee75f031e75f6972b552dba70f1a13e5fc71f5b37829ec59ed96cec70a1d0445
+
+=== Tree levels (bottom to top) ===
+
+Level 0 (4 node(s)):
+  d5aa81e54bcbcc7ea312f3be3ad6a4046a1dcfe9643904180252a7f5818d26b1
+  9970a8292c62998c088e87f73a7a21da64191022688d92179a47d8911507912e
+  d73ce1e0d503b2207cf4919e227448712242300fb028f841ec8225c855cafa61
+  ee75f031e75f6972b552dba70f1a13e5fc71f5b37829ec59ed96cec70a1d0445
+
+Level 1 (2 node(s)):
+  fbf2db5edc44901f53aa84dac988b63ebfb77b50d1c578dcb8639a23582f6cb8
+  39d48363fa7af318b7832b3ab8ea73b0be35618c11e3ab06f06f579e55c81ec6
+
+Level 2 (1 node(s)):
+  31630b5976fafe4866f6e7ce545c535e2f5a331f08e4de9d7b118a7c43978cfe
+
+=== Result ===
+Computed Merkle Root: 31630b5976fafe4866f6e7ce545c535e2f5a331f08e4de9d7b118a7c43978cfe
+
+Note: this will NOT match block 402090's real merkle root
+(71643a766c206772c0ef1bca9adf75fc66b1738ee0dd6fd56aee4d20a67fa85c)
+because the real block has 192 transactions, not 4. This script
+demonstrates the correct pairwise-hashing algorithm on a subset.
